@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Centro Operacional de Notícias</title>
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
+<link rel="icon" href="favicon.svg">
+</head>
+<body>
+<header>
+<h1>Centro Operacional de Notícias</h1>
+<p>Monitoramento Rodoviário, Segurança e Trânsito — Brasil</p>
+</header>
+<section id="filtros">
+<select id="tipoSelect">
+<option value="todos">Todos os Tipos</option>
+<option value="acidente">Acidentes</option>
+<option value="interdicao">Interdições</option>
+<option value="roubo">Roubo/Furto</option>
+<option value="portos">Portos/Marítimos</option>
+<option value="leis">Leis/Regulação</option>
+<option value="sindicatos">Sindicatos/Greves</option>
+</select>
+<select id="regiaoSelect">
+<option value="todas">Todas as Regiões</option>
+<option value="norte">Norte</option>
+<option value="nordeste">Nordeste</option>
+<option value="centro-oeste">Centro-Oeste</option>
+<option value="sudeste">Sudeste</option>
+<option value="sul">Sul</option>
+</select>
+<select id="rodoviaSelect"></select>
+<button id="btnAtualizar">Atualizar Notícias</button>
+</section>
+<section id="estatisticas">
+<div class="card">🚗 <span id="totalAcidentes">0</span> Acidentes</div>
+<div class="card">🚧 <span id="totalInterdicoes">0</span> Interdições</div>
+<div class="card">🚨 <span id="totalRoubos">0</span> Roubos/Furtos</div>
+</section>
+<section id="graficos">
+<canvas id="graficoBarras"></canvas>
+<canvas id="graficoPizza"></canvas>
+</section>
+<section id="mapa">
+<iframe src="map.html"></iframe>
+<button id="expandirMapa">⛶ Expandir</button>
+</section>
+<section id="noticias">
+<h2>Últimas Notícias</h2>
+<div id="listaNoticias"></div>
+</section>
+<aside>
+<div class="card"><h3>☀️ Clima - São Paulo</h3><div id="infoClima">Carregando...</div></div>
+</aside>
+<footer>© 2025 Centro Operacional de Notícias</footer>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</body></html>

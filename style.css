@@ -1,0 +1,11 @@
+body{font-family:'Segoe UI',sans-serif;margin:0;background:#f4f6f8;color:#222;}
+header{background:#003366;color:#fff;text-align:center;padding:1rem;}
+#filtros{display:flex;justify-content:center;gap:.5rem;padding:1rem;background:#e8eef4;}
+#estatisticas{display:flex;justify-content:space-around;padding:1rem;}
+.card{background:#fff;border-radius:8px;padding:1rem;box-shadow:0 2px 5px rgba(0,0,0,.1);text-align:center;}
+#graficos{display:flex;flex-wrap:wrap;justify-content:center;gap:1rem;padding:1rem;}
+#mapa{position:relative;width:95%;margin:1rem auto;height:420px;}
+iframe{width:100%;height:100%;border:none;border-radius:10px;}
+#expandirMapa{position:absolute;bottom:10px;right:10px;background:#003366;color:#fff;border:none;padding:8px 12px;border-radius:6px;cursor:pointer;}
+#listaNoticias{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:1rem;padding:1rem;}
+.noticia{background:#fff;padding:1rem;border-radius:8px;box-shadow:0 2px 5px rgba(0,0,0,.1);}
